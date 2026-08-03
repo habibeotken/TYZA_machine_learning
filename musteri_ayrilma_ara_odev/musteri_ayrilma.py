@@ -138,7 +138,7 @@ plt.show()
 
 
 # Decision Tree modelini oluşturma ve eğitme
-decision_tree_model = DecisionTreeClassifier(random_state=42)
+decision_tree_model = DecisionTreeClassifier(random_state=42,max_depth=2,min_samples_split=15)
 decision_tree_model.fit(X_train, y_train)
 
 
